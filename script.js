@@ -11,6 +11,8 @@ function slide() {
     });
     console.log(row)
     makeGrid(size.value)
+    let color = colorForm.color.value;
+    changeColor(color)
 }
 
 function makeGrid (gridSize){
@@ -24,14 +26,34 @@ function makeGrid (gridSize){
         }
         container.append(row)
     }
+        
+}
+
+function makeColor(x){
     let items = container.querySelectorAll(".column");
     items.forEach(e => {
         e.addEventListener('mouseover', ()=>{
-            e.style.backgroundColor = "black";
+            e.style.backgroundColor = x;
         })
     });
-        
-    
 }
 
+let colorForm=document.getElementById("colorForm")
+
+function changeColor (x){
+    let items = container.querySelectorAll(".column");
+    items.forEach(e => {
+        e.removeEventListener;
+        e.addEventListener('mouseover', ()=>{
+            e.style.backgroundColor = x;
+        })
+    });
+}
+
+colorForm.addEventListener('click', ()=>{
+    let color = colorForm.color.value;
+    changeColor(color)
+})
+
 makeGrid(size.value)
+makeColor(colorForm.color.value)

@@ -9,7 +9,13 @@
 </head>
 <body>
     <h1>ETCH A SKETCH</h1>
-    <input type="range" id="size" min="1" max="64" onchange="slide()" value="10">
+    <input type="range" id="size" min="1" max="64" onchange="slide()" value="20">
+    <form id="colorForm">
+        <input checked type="radio" name="color" id="black" value="black"><label for="black">Black</label>
+        <input type="radio" name="color" id="blue" value="blue"><label for="blue">blue</label>
+        <input type="radio" name="color" id="red" value="red"><label for="red">red</label>
+        <input type="radio" name="color" id="delete" value="white"><label for="delete">delete</label>
+    </form>
     <label for="value" id="sizeLabel" ></label>
     <div id="container">
 
