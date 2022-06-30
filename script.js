@@ -57,3 +57,8 @@ colorForm.addEventListener('click', ()=>{
 
 makeGrid(size.value)
 makeColor(colorForm.color.value)
+
+let colorpicker=document.getElementById("colorpicker")
+colorpicker.addEventListener('change', ()=>{
+    changeColor(colorpicker.value)
+})
