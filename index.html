@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>ETCH A SKETCH</h1>
-    <input type="range" id="size" min="1" max="64" onchange="slide()" value="20">
+    <input type="range" id="size" min="1" max="64" onchange="slide()" value="32">
     <label for="value" id="sizeLabel" ></label>
     <form id="colorForm">
         <input checked type="radio" name="color" id="black" value="black"><label for="black">Black </label>
@@ -18,6 +18,8 @@
         <input type="radio" name="color" id="delete" value="white"><label for="delete">Delete</label>
     </form>
         <label for="colorpicker">Pick a Color: </label><input type="color" name="color" id="colorpicker">
+    <button id="grid">Toggle Grid</button>
+    
     <div id="container">
 
     </div>

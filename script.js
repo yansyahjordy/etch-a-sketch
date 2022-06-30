@@ -62,3 +62,11 @@ let colorpicker=document.getElementById("colorpicker")
 colorpicker.addEventListener('change', ()=>{
     changeColor(colorpicker.value)
 })
+
+let grid = document.getElementById("grid")
+grid.addEventListener('click', ()=>{
+    let items = container.querySelectorAll(".column,.row");
+    items.forEach(e => {
+        e.classList.toggle('noborder')
+    })
+})
