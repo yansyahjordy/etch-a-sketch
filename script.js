@@ -9,7 +9,6 @@ function slide() {
     row.forEach(e => {
         container.removeChild(e)
     });
-    console.log(row)
     makeGrid(size.value)
     let color = colorForm.color.value;
     changeColor(color)

@@ -9,22 +9,37 @@
 </head>
 <body>
     <h1>ETCH A SKETCH</h1>
-    <input type="range" id="size" min="1" max="64" onchange="slide()" value="32">
-    <label for="value" id="sizeLabel" ></label>
-    <form id="colorForm">
-        <input checked type="radio" name="color" id="black" value="black"><label for="black">Black </label>
-        <input type="radio" name="color" id="blue" value="blue"><label for="blue">Blue</label>
-        <input type="radio" name="color" id="red" value="red"><label for="red">Red</label>
-        <input type="radio" name="color" id="delete" value="white"><label for="delete">Delete</label>
-    </form>
-        <label for="colorpicker">Pick a Color: </label><input type="color" name="color" id="colorpicker">
-    <button id="grid">Toggle Grid</button>
-    <button id="random">Click Me for Rainbow!</button>
-    <button id="clear">Clear</button>
-    
-    <div id="container">
-
+    <div class="box">
+        <div class="content">
+            <div class="options">
+                <p>Grid Size:</p>
+                <input type="range" id="size" min="1" max="64" onchange="slide()" value="32">
+                <label for="value" id="sizeLabel" ></label>
+                <form id="colorForm">
+                    <div class="black">
+                        <input checked type="radio" name="color" id="black" value="black"><label for="black">Black </label>
+                    </div>
+                    <div class="grey">
+                        <input type="radio" name="color" id="grey" value="grey"><label for="grey">Grey</label>
+                    </div>
+                    <div class="delete">
+                        <input type="radio" name="color" id="delete" value="white"><label for="delete">Eraser</label>
+                    </div>
+                </form>
+                <div class="picker">
+                    <span for="colorpicker">Pick a Color :  </span><input type="color" name="color" id="colorpicker">
+                </div>
+                <button id="grid">Toggle Grid</button>
+                <button id="random">Click Me for Rainbow!</button>
+                <button id="clear">Clear</button>
+            </div>
+            
+            <div id="container">
+        
+            </div>
+        </div>
     </div>
+    <footer>BY: JORDY</footer>
     <script src="./script.js"></script>
 </body>
 </html>
