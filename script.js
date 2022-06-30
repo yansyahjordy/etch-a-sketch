@@ -13,7 +13,6 @@ function slide() {
     makeGrid(size.value)
 }
 
-makeGrid(size.value)
 function makeGrid (gridSize){
     for (let i = 0; i < gridSize; i++){
         let row = document.createElement('div')
@@ -25,5 +24,14 @@ function makeGrid (gridSize){
         }
         container.append(row)
     }
-}
+    let items = container.querySelectorAll(".column");
+    items.forEach(e => {
+        e.addEventListener('mouseover', ()=>{
+            e.style.backgroundColor = "black";
+        })
+    });
+        
     
+}
+
+makeGrid(size.value)
