@@ -70,3 +70,28 @@ grid.addEventListener('click', ()=>{
         e.classList.toggle('noborder')
     })
 })
+
+let random = document.getElementById("random")
+random.addEventListener('click', ()=>{
+    let items = container.querySelectorAll(".column");
+    items.forEach(e => {
+        e.removeEventListener;
+        e.addEventListener('mouseover', ()=>{
+            e.style.backgroundColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+        })
+    });
+})
+
+function clear () {
+    let items = container.querySelectorAll(".column");
+    items.forEach(e => {
+        e.style.backgroundColor = "white"
+    })
+}
+
+let clearbtn = document.getElementById('clear')
+clearbtn.addEventListener('click',()=>{
+    clear();
+})
+  
+    
