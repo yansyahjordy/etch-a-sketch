@@ -1,11 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* #06283D dark blue 
+#1363DF blue
+#47B5FF lightblue
+#DFF6FF whiteblue */
+
+
+body {
+    font-family: 'Righteous', cursive;
+    background-color: #DFF6FF;
+}
 #container{
     width:500px;
     height:500px;
-    border:5px solid black;
+    border:5px solid #06283D;
     display: flex;
     justify-content: center;
     align-items: center;
     margin:0px;
+    background-color: white;
 }
 
 .row{
@@ -36,26 +49,30 @@
 }
 
 h1{
+    color:#DFF6FF;
     text-align: center;
     height: 10vh;
     width: 100%;
-    background-color: blue;
+    background-color: #06283D;
     margin: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 60px;
     position: fixed;
+    -webkit-text-stroke: 2px #1363DF;
 }
 .content{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid black;
+    border: 5px solid #47B5FF;
     border-radius: 15px;
-    padding: 20px;
+    padding: 30px;
+    background-color: #1363DF;
 }
 .options{
+    color:#DFF6FF;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -82,16 +99,24 @@ p{
 button{
     font-size: 20px;
     width: 200px;
+    font-family: 'Righteous', cursive;
+    border-radius: 10px;
+    background-color:#06283D;
+    color: #DFF6FF;
+    padding:10px;
 }
 #size{
     width:200px;
 }
 
 footer{
+    background-color: #06283D;
+    margin: 0px;
     display:flex;
     align-items: center;
     justify-content: center;
     height: 5vh;
     font-size: 25px;
     font-weight: bold;
+    color: #DFF6FF;
 }
